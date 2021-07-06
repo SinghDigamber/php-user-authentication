@@ -14,7 +14,7 @@
         $pswd = mysqli_real_escape_string($connection, $password_signin);
 
         // Query if email exists in db
-        $sql = "SELECT * From users WHERE email = '{$email_signin}' ";
+        $sql = "SELECT * From users WHERE email = '{$user_email}' ";
         $query = mysqli_query($connection, $sql);
         $rowCount = mysqli_num_rows($query);
 
