@@ -1,6 +1,6 @@
 # php-user-authentication
 
-Build PHP 7 user authentication and login system with MySQL and Bootstrap 4 using procedural programming approach.
+Build PHP 8 user authentication and login system with MySQL and Bootstrap 5 using procedural programming approach.
 
 [Build Login and User Authentication System with PHP 7 and MySQL](https://www.positronx.io/build-php-mysql-login-and-user-authentication-system/)
 
