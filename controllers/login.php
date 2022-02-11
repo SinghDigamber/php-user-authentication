@@ -53,7 +53,6 @@
                 // Allow only verified user
                 if($is_active == '1') {
                     if($email_signin == $email && $password_signin == $password) {
-                       header("Location: ./dashboard.php");
                        
                        $_SESSION['id'] = $id;
                        $_SESSION['firstname'] = $firstname;
@@ -61,6 +60,18 @@
                        $_SESSION['email'] = $email;
                        $_SESSION['mobilenumber'] = $mobilenumber;
                        $_SESSION['token'] = $token;
+
+                        /* JAu */
+                       if (isset($_SESSION['next_page'])){
+                         $next_page = $_SESSION['next_page'];
+                         unset($_SESSION['next_page']);
+                         header("location: $next_page");
+                         exit;
+                        }
+
+                       header("Location: ./dashboard.php");
+                       exit;
+            
 
                     } else {
                         $emailPwdErr = '<div class="alert alert-danger">
