@@ -9,8 +9,8 @@
     }
 
     $hostname = "localhost";
-    $username = "phpdemo";
-    $password = "4Mu99BhzK8dr4vF1";
+    $username = "root";
+    $password = "";
     $dbname = "positronx_db";
     
     $connection = mysqli_connect($hostname, $username, $password, $dbname) or die("Database connection not established.")
